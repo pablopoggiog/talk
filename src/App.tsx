@@ -3,7 +3,6 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
-// import { useCollectionData } from "react-firebase-hooks/firestore";
 import { Chat, Login, Logout } from "src/containers";
 
 firebase.initializeApp({
@@ -17,7 +16,7 @@ firebase.initializeApp({
 });
 
 const auth = firebase.auth();
-// const firestore = firebase.firestore();
+const firestore = firebase.firestore();
 
 const App = () => {
   const [user] = useAuthState(auth);
@@ -27,7 +26,8 @@ const App = () => {
       <section>
         {user ? (
           <>
-            <Chat /> <Logout auth={auth} />{" "}
+            <Chat firestore={firestore} />
+            <Logout auth={auth} />{" "}
           </>
         ) : (
           <Login auth={auth} />
