@@ -28,7 +28,8 @@ export const useFirebase = () => {
   };
 
   const messagesRef = firestore.collection("messages");
-  const query = messagesRef.orderBy("createdAt").limit(25);
+  // const query = messagesRef.orderBy("createdAt").limit(25);
+  const query = messagesRef.limit(25);
   const [messages] = useCollectionData(query, { idField: "id" });
 
   return {
