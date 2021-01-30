@@ -4,7 +4,7 @@ import "firebase/firestore";
 import "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 // import { useCollectionData } from "react-firebase-hooks/firestore";
-import { Chat, Login } from "src/containers";
+import { Chat, Login, Logout } from "src/containers";
 
 firebase.initializeApp({
   apiKey: "AIzaSyBQLgUQPLwLJXFI-aLv9nZqSxMNvMbYILI",
@@ -24,7 +24,15 @@ const App = () => {
 
   return (
     <div>
-      <section>{user ? <Chat /> : <Login />}</section>
+      <section>
+        {user ? (
+          <>
+            <Chat /> <Logout auth={auth} />{" "}
+          </>
+        ) : (
+          <Login auth={auth} />
+        )}
+      </section>
     </div>
   );
 };
