@@ -1,12 +1,8 @@
 import React, { FunctionComponent } from "react";
-import firebase from "firebase/app";
+import { useFirebase } from "src/hooks";
 
-interface LogoutProps {
-  auth: firebase.auth.Auth;
-}
-
-export const Logout: FunctionComponent<LogoutProps> = ({ auth }) => {
-  const logout = () => auth.signOut();
+export const Logout: FunctionComponent = () => {
+  const { auth, logout } = useFirebase();
 
   return (
     auth.currentUser && (

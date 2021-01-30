@@ -1,15 +1,8 @@
 import React, { FunctionComponent } from "react";
-import firebase from "firebase/app";
+import { useFirebase } from "src/hooks";
 
-interface LoginProps {
-  auth: firebase.auth.Auth;
-}
-
-export const Login: FunctionComponent<LoginProps> = ({ auth }) => {
-  const loginWithGoogle = () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider);
-  };
+export const Login: FunctionComponent = () => {
+  const { loginWithGoogle } = useFirebase();
 
   return (
     <div>
