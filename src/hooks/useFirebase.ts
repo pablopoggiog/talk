@@ -28,16 +28,36 @@ export const useFirebase = () => {
   };
 
   const messagesRef = firestore.collection("messages");
-  // const query = messagesRef.orderBy("createdAt").limit(25);
-  const query = messagesRef.limit(25);
+  const query = messagesRef.orderBy("createdAt").limit(25);
   const [messages] = useCollectionData(query, { idField: "id" });
+
+  const sendMessage = (text: string) => {
+    const asyncSending = async () => {
+      const { uid, photoURL } = auth.currentUser!;
+
+      console.log("photoURL ", photoURL);
+
+      await messagesRef.add({
+        text,
+        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+        uid,
+        photoURL,
+      });
+    };
+    try {
+      asyncSending();
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return {
     auth,
     user,
     firestore,
+    messages,
     loginWithGoogle,
     logout,
-    messages,
+    sendMessage,
   };
 };
