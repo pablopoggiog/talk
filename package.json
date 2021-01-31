@@ -24,7 +24,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "firebase deploy",
-    "build:dev": "env-cmd -f .env.development yarn build && firebase deploy -P development"
+    "build:dev": "env-cmd -f .env.development yarn build && firebase deploy -P development",
+    "deptree": "depcruise --config .dependency-cruiser.js  src",
+    "deptree:graph": "depcruise --config .dependency-cruiser.js --output-type dot src | dot -T svg > dependencygraph.svg"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +48,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.7",
+    "dependency-cruiser": "^9.22.0",
     "env-cmd": "^10.1.0",
     "styled-components": "^5.2.1"
   }
