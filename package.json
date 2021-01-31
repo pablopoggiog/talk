@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "firebase deploy",
-    "build:dev": "env-cmd -f .env.development npm run build && firebase deploy -P dev"
+    "build:dev": "env-cmd -f .env.development npm run build && firebase deploy -P development"
   },
   "eslintConfig": {
     "extends": [
