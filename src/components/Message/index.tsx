@@ -7,18 +7,16 @@ interface MessageProps {
 }
 
 export const Message: FunctionComponent<MessageProps> = ({
-  message: { text, uid, photoUrl },
+  message: { text, uid, photoURL },
 }) => {
   const { auth } = useFirebase();
-
-  console.log("message id ", uid, "user id", auth.currentUser?.uid);
 
   const isOwnMessage = uid === auth.currentUser?.uid;
 
   return (
     <Container own={isOwnMessage}>
-      <Photo src={photoUrl} />
-      <Text>{text}</Text>
+      <Photo own={isOwnMessage} src={photoURL} />
+      <Text own={isOwnMessage}>{text}</Text>
     </Container>
   );
 };

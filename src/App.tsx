@@ -10,8 +10,8 @@ const App: FunctionComponent = () => {
     <Container>
       {user ? (
         <>
+          <Logout />
           <Chat />
-          <Logout />{" "}
         </>
       ) : (
         <Login />

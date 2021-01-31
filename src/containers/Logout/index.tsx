@@ -9,7 +9,9 @@ export const Logout: FunctionComponent = () => {
   return (
     auth.currentUser && (
       <Container>
-        <Button onClick={logout}>Log Out</Button>
+        <Button onClick={logout} width="100%">
+          Log Out
+        </Button>
       </Container>
     )
   );
