@@ -18,7 +18,6 @@ export const Chat: FunctionComponent = () => {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     sendMessage(newMessage);
-    console.log(newMessage);
     setNewMessage("");
   };
 

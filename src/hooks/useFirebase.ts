@@ -5,13 +5,13 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 firebase.initializeApp({
-  apiKey: "AIzaSyBQLgUQPLwLJXFI-aLv9nZqSxMNvMbYILI",
-  authDomain: "react-ts-talk.firebaseapp.com",
-  projectId: "react-ts-talk",
-  storageBucket: "react-ts-talk.appspot.com",
-  messagingSenderId: "922795508972",
-  appId: "1:922795508972:web:97b80396f1dae5b26bd1c9",
-  measurementId: "G-YPZSXBZJ3Y",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASURAMENT_ID,
 });
 
 const auth = firebase.auth();
@@ -34,8 +34,6 @@ export const useFirebase = () => {
   const sendMessage = (text: string) => {
     const asyncSending = async () => {
       const { uid, photoURL } = auth.currentUser!;
-
-      console.log("photoURL ", photoURL);
 
       await messagesRef.add({
         text,
