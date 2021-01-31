@@ -12,6 +12,10 @@ export const Button = styled.button<ButtonProps>`
   cursor: pointer;
   padding: 1em;
   width: ${({ width }) => width || "auto"};
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 
   &:hover {
     background-color: lightGrey;

@@ -8,5 +8,6 @@ export const Container = styled.div`
   padding: 2em 1.5em;
   box-sizing: border-box;
   align-items: center;
-  background-color: #F5FFFA;
+  background-color: #f5fffa;
+  font-weight: 500;
 `;
