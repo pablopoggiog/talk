@@ -19,11 +19,6 @@
 <path fill="#ffffff" stroke="black" stroke-width="2" d="M20,-347.75C20,-347.75 743,-347.75 743,-347.75 749,-347.75 755,-353.75 755,-359.75 755,-359.75 755,-669.75 755,-669.75 755,-675.75 749,-681.75 743,-681.75 743,-681.75 20,-681.75 20,-681.75 14,-681.75 8,-675.75 8,-669.75 8,-669.75 8,-359.75 8,-359.75 8,-353.75 14,-347.75 20,-347.75"/>
 <text text-anchor="middle" x="381.5" y="-670.55" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00">src</text>
 </g>
-<g id="clust3" class="cluster">
-<title>cluster_src/assets</title>
-<path fill="#ffffff" stroke="black" stroke-width="2" d="M430,-389.75C430,-389.75 476,-389.75 476,-389.75 482,-389.75 488,-395.75 488,-401.75 488,-401.75 488,-429.75 488,-429.75 488,-435.75 482,-441.75 476,-441.75 476,-441.75 430,-441.75 430,-441.75 424,-441.75 418,-435.75 418,-429.75 418,-429.75 418,-401.75 418,-401.75 418,-395.75 424,-389.75 430,-389.75"/>
-<text text-anchor="middle" x="453" y="-430.55" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00">assets</text>
-</g>
 <g id="clust4" class="cluster">
 <title>cluster_src/components</title>
 <path fill="#ffffff" stroke="black" stroke-width="2" d="M430,-449.75C430,-449.75 640,-449.75 640,-449.75 646,-449.75 652,-455.75 652,-461.75 652,-461.75 652,-583.75 652,-583.75 652,-589.75 646,-595.75 640,-595.75 640,-595.75 430,-595.75 430,-595.75 424,-595.75 418,-589.75 418,-583.75 418,-583.75 418,-461.75 418,-461.75 418,-455.75 424,-449.75 430,-449.75"/>
@@ -38,6 +33,11 @@
 <title>cluster_src/components/Message</title>
 <path fill="#ffffff" stroke="black" stroke-width="2" d="M508,-517.75C508,-517.75 632,-517.75 632,-517.75 638,-517.75 644,-523.75 644,-529.75 644,-529.75 644,-557.75 644,-557.75 644,-563.75 638,-569.75 632,-569.75 632,-569.75 508,-569.75 508,-569.75 502,-569.75 496,-563.75 496,-557.75 496,-557.75 496,-529.75 496,-529.75 496,-523.75 502,-517.75 508,-517.75"/>
 <text text-anchor="middle" x="570" y="-558.55" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00">Message</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_src/assets</title>
+<path fill="#ffffff" stroke="black" stroke-width="2" d="M430,-389.75C430,-389.75 476,-389.75 476,-389.75 482,-389.75 488,-395.75 488,-401.75 488,-401.75 488,-429.75 488,-429.75 488,-435.75 482,-441.75 476,-441.75 476,-441.75 430,-441.75 430,-441.75 424,-441.75 418,-435.75 418,-429.75 418,-429.75 418,-401.75 418,-401.75 418,-395.75 424,-389.75 430,-389.75"/>
+<text text-anchor="middle" x="453" y="-430.55" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="9.00">assets</text>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_src/containers</title>
@@ -232,12 +232,8 @@
 <!-- src/styles.ts&#45;&gt;node_modules/styled&#45;components -->
 <g id="edge45" class="edge">
 <title>src/styles.ts&#45;&gt;node_modules/styled&#45;components</title>
-<g id="a_edge45"><a xlink:title="not&#45;to&#45;dev&#45;dep">
-<path fill="none" stroke="red" d="M235.49,-355.73C250.1,-327.82 299.21,-244.75 366,-244.75 366,-244.75 366,-244.75 454,-244.75 566.16,-244.75 696.97,-258.84 768.18,-267.71"/>
-<polygon fill="red" stroke="red" points="768.25,-269.83 774.46,-268.5 768.77,-265.67 768.25,-269.83"/>
-</a>
-</g>
-<text text-anchor="middle" x="476.96" y="-238.48" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">not&#45;to&#45;dev&#45;dep</text>
+<path fill="none" stroke="#000000" stroke-opacity="0.200000" d="M235.49,-355.73C250.1,-327.82 299.21,-244.75 366,-244.75 366,-244.75 366,-244.75 454,-244.75 566.16,-244.75 696.97,-258.84 768.18,-267.71"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="768.25,-269.83 774.46,-268.5 768.77,-265.67 768.25,-269.83"/>
 </g>
 <!-- src/containers/Chat/index.tsx -->
 <g id="node18" class="node">
@@ -320,12 +316,8 @@
 <!-- src/components/Button/index.ts&#45;&gt;node_modules/styled&#45;components -->
 <g id="edge8" class="edge">
 <title>src/components/Button/index.ts&#45;&gt;node_modules/styled&#45;components</title>
-<g id="a_edge8"><a xlink:title="not&#45;to&#45;dev&#45;dep">
-<path fill="none" stroke="red" d="M549.37,-465.61C573.98,-452.69 620.38,-428.34 660,-407.75 702.16,-385.84 727.98,-397.82 755,-358.75 772.56,-333.36 742.72,-313.03 763,-289.75 764.77,-287.72 766.77,-285.95 768.94,-284.4"/>
-<polygon fill="red" stroke="red" points="770.23,-286.08 774.29,-281.19 768.06,-282.48 770.23,-286.08"/>
-</a>
-</g>
-<text text-anchor="middle" x="643.27" y="-394.47" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">not&#45;to&#45;dev&#45;dep</text>
+<path fill="none" stroke="#000000" stroke-opacity="0.200000" d="M549.37,-465.61C573.98,-452.69 620.38,-428.34 660,-407.75 702.16,-385.84 727.98,-397.82 755,-358.75 772.56,-333.36 742.72,-313.03 763,-289.75 764.77,-287.72 766.77,-285.95 768.94,-284.4"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="770.23,-286.08 774.29,-281.19 768.06,-282.48 770.23,-286.08"/>
 </g>
 <!-- src/components/Message/index.tsx -->
 <g id="node15" class="node">
@@ -366,12 +358,8 @@
 <!-- src/components/Message/styles.ts&#45;&gt;node_modules/styled&#45;components -->
 <g id="edge12" class="edge">
 <title>src/components/Message/styles.ts&#45;&gt;node_modules/styled&#45;components</title>
-<g id="a_edge12"><a xlink:title="not&#45;to&#45;dev&#45;dep">
-<path fill="none" stroke="red" d="M628.07,-525.63C660.24,-508.28 726.72,-467.16 755,-410.75 767.08,-386.66 745.81,-310.5 763,-289.75 764.75,-287.63 766.76,-285.79 768.96,-284.19"/>
-<polygon fill="red" stroke="red" points="770.35,-285.81 774.38,-280.89 768.17,-282.22 770.35,-285.81"/>
-</a>
-</g>
-<text text-anchor="middle" x="725" y="-403.54" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">not&#45;to&#45;dev&#45;dep</text>
+<path fill="none" stroke="#000000" stroke-opacity="0.200000" d="M628.07,-525.63C660.24,-508.28 726.72,-467.16 755,-410.75 767.08,-386.66 745.81,-310.5 763,-289.75 764.75,-287.63 766.76,-285.79 768.96,-284.19"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="770.35,-285.81 774.38,-280.89 768.17,-282.22 770.35,-285.81"/>
 </g>
 <!-- src/components/index.tsx -->
 <g id="node17" class="node">
@@ -436,12 +424,8 @@
 <!-- src/containers/Chat/styles.ts&#45;&gt;node_modules/styled&#45;components -->
 <g id="edge22" class="edge">
 <title>src/containers/Chat/styles.ts&#45;&gt;node_modules/styled&#45;components</title>
-<g id="a_edge22"><a xlink:title="not&#45;to&#45;dev&#45;dep">
-<path fill="none" stroke="red" d="M394.12,-398.03C400.24,-394.79 406.1,-390.46 410,-384.75 419.08,-371.46 406.8,-324.31 418,-312.75 453,-276.64 479.72,-296.75 530,-296.75 530,-296.75 530,-296.75 610,-296.75 664.06,-296.75 725.49,-289.52 768.07,-283.35"/>
-<polygon fill="red" stroke="red" points="768.58,-285.39 774.22,-282.44 767.97,-281.24 768.58,-285.39"/>
-</a>
-</g>
-<text text-anchor="middle" x="580" y="-289.55" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">not&#45;to&#45;dev&#45;dep</text>
+<path fill="none" stroke="#000000" stroke-opacity="0.200000" d="M394.12,-398.03C400.24,-394.79 406.1,-390.46 410,-384.75 419.08,-371.46 406.8,-324.31 418,-312.75 453,-276.64 479.72,-296.75 530,-296.75 530,-296.75 530,-296.75 610,-296.75 664.06,-296.75 725.49,-289.52 768.07,-283.35"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="768.58,-285.39 774.22,-282.44 767.97,-281.24 768.58,-285.39"/>
 </g>
 <!-- src/containers/Chat/styles.ts&#45;&gt;src/assets/pink.jpg -->
 <g id="edge20" class="edge">
@@ -491,12 +475,8 @@
 <!-- src/containers/Login/styles.ts&#45;&gt;node_modules/styled&#45;components -->
 <g id="edge27" class="edge">
 <title>src/containers/Login/styles.ts&#45;&gt;node_modules/styled&#45;components</title>
-<g id="a_edge27"><a xlink:title="not&#45;to&#45;dev&#45;dep">
-<path fill="none" stroke="red" d="M394.16,-458.06C400.28,-454.82 406.13,-450.48 410,-444.75 430,-415.14 396.21,-393.07 418,-364.75 450.42,-322.62 476.84,-322.75 530,-322.75 530,-322.75 530,-322.75 610,-322.75 675.25,-322.75 698.59,-332.55 755,-299.75 759.92,-296.89 758.22,-292.84 763,-289.75 764.9,-288.52 766.9,-287.39 768.96,-286.35"/>
-<polygon fill="red" stroke="red" points="769.96,-288.2 774.56,-283.81 768.23,-284.38 769.96,-288.2"/>
-</a>
-</g>
-<text text-anchor="middle" x="580.01" y="-315.55" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">not&#45;to&#45;dev&#45;dep</text>
+<path fill="none" stroke="#000000" stroke-opacity="0.200000" d="M394.16,-458.06C400.28,-454.82 406.13,-450.48 410,-444.75 430,-415.14 396.21,-393.07 418,-364.75 450.42,-322.62 476.84,-322.75 530,-322.75 530,-322.75 530,-322.75 610,-322.75 675.25,-322.75 698.59,-332.55 755,-299.75 759.92,-296.89 758.22,-292.84 763,-289.75 764.9,-288.52 766.9,-287.39 768.96,-286.35"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="769.96,-288.2 774.56,-283.81 768.23,-284.38 769.96,-288.2"/>
 </g>
 <!-- src/containers/Logout/index.tsx&#45;&gt;node_modules/react -->
 <g id="edge29" class="edge">
@@ -534,12 +514,8 @@
 <!-- src/containers/Logout/styles.ts&#45;&gt;node_modules/styled&#45;components -->
 <g id="edge32" class="edge">
 <title>src/containers/Logout/styles.ts&#45;&gt;node_modules/styled&#45;components</title>
-<g id="a_edge32"><a xlink:title="not&#45;to&#45;dev&#45;dep">
-<path fill="none" stroke="red" d="M394.29,-518.14C400.4,-514.9 406.22,-510.54 410,-504.75 424.36,-482.74 400.59,-406.44 418,-386.75 468.52,-329.61 699.62,-374.19 755,-321.75 765.64,-311.67 752.68,-300.16 763,-289.75 764.85,-287.88 766.91,-286.23 769.11,-284.79"/>
-<polygon fill="red" stroke="red" points="770.28,-286.53 774.46,-281.75 768.21,-282.88 770.28,-286.53"/>
-</a>
-</g>
-<text text-anchor="middle" x="552.6" y="-345.36" font-family="Helvetica,sans-Serif" font-size="9.00" fill="red">not&#45;to&#45;dev&#45;dep</text>
+<path fill="none" stroke="#000000" stroke-opacity="0.200000" d="M394.29,-518.14C400.4,-514.9 406.22,-510.54 410,-504.75 424.36,-482.74 400.59,-406.44 418,-386.75 468.52,-329.61 699.62,-374.19 755,-321.75 765.64,-311.67 752.68,-300.16 763,-289.75 764.85,-287.88 766.91,-286.23 769.11,-284.79"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-opacity="0.200000" points="770.28,-286.53 774.46,-281.75 768.21,-282.88 770.28,-286.53"/>
 </g>
 <!-- src/hooks/useFirebase.ts&#45;&gt;node_modules/firebase -->
 <g id="edge37" class="edge">
