@@ -13,6 +13,7 @@ export const Container = styled.div<Props>`
     own ? "lightBlue" : "	rgba(255,219,220, 0.7)"};
   opacity: 0.75;
   margin: ${({ own }) => (own ? "0.5em 0 0.5em auto" : "0.5em auto 0.5em 0")};
+  min-width: 20vw;
   max-width: 65vw;
 `;
 
