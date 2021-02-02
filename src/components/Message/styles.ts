@@ -7,7 +7,7 @@ interface Props {
 export const Container = styled.div<Props>`
   border-radius: 2em;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
   background-color: ${({ own }) =>
     own ? "lightBlue" : "	rgba(255,219,220, 0.7)"};
@@ -38,8 +38,8 @@ export const Text = styled.p<Props>`
 `;
 
 export const DateFooter = styled.p<Props>`
-  font-size: 0.5em;
+  font-size: 0.55em;
   padding: 0.8em 1.1em;
-  margin: 0;
-  margin: ${({ own }) => (own ? "0 2em 0 auto" : "0 auto 0 2em")};
+  color: #303030;
+  margin: ${({ own }) => (own ? "0 1.1em 0 auto" : "0 auto 0 1.1em")};
 `;
