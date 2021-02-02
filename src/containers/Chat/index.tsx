@@ -7,7 +7,7 @@ import {
   NewMessageForm,
   Input,
   SubmitButton,
-  ChatsList,
+  MessagesList,
 } from "./styles";
 
 export const Chat: FunctionComponent = () => {
@@ -23,11 +23,11 @@ export const Chat: FunctionComponent = () => {
 
   return (
     <Container>
-      <ChatsList>
+      <MessagesList>
         {messages &&
           // @ts-ignore
           messages.map((msg) => <Message key={msg.id} message={msg} />)}
-      </ChatsList>
+      </MessagesList>
       <NewMessageForm onSubmit={onSubmit}>
         <Input
           value={newMessage}

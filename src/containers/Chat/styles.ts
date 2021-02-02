@@ -10,7 +10,7 @@ export const Container = styled.div<ContainerProps>`
   box-sizing: border-box;
 `;
 
-export const ChatsList = styled.div`
+export const MessagesList = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1em 1em;
