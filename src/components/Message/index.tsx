@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState, useEffect } from "react";
+import React, { FunctionComponent } from "react";
 import { Container, Photo, Text, DateFooter, Content } from "./styles";
 import { useFirebase, useDate } from "src/hooks";
 
