@@ -8,7 +8,7 @@ export const Container = styled.div<Props>`
   border-radius: 2em;
   display: flex;
   align-items: center;
-  flex-direction: ${({ own }) => (own ? " row-reverse" : "reverse")};
+  flex-direction: column;
   background-color: ${({ own }) =>
     own ? "lightBlue" : "	rgba(255,219,220, 0.7)"};
   opacity: 0.75;
@@ -16,10 +16,16 @@ export const Container = styled.div<Props>`
   max-width: 65vw;
 `;
 
+export const Content = styled.div<Props>`
+  display: flex;
+  flex-direction: ${({ own }) => (own ? " row-reverse" : "reverse")};
+`;
+
 export const Photo = styled.img<Props>`
   width: 40px;
+  height: 40px;
   border-radius: 1em;
-  margin: 1em 0;
+  margin: 1em 0 0;
 `;
 
 export const Text = styled.p<Props>`
@@ -27,4 +33,12 @@ export const Text = styled.p<Props>`
   max-width: 45vw;
   padding: 0.8em 1.1em;
   text-align: ${({ own }) => (own ? "right" : "left")};
+  margin-bottom: 0;
+`;
+
+export const DateFooter = styled.p<Props>`
+  font-size: 0.5em;
+  padding: 0.8em 1.1em;
+  margin: 0;
+  margin: ${({ own }) => (own ? "0 2em 0 auto" : "0 auto 0 2em")};
 `;
