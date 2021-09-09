@@ -20,6 +20,16 @@ export const MessagesList = styled.div`
   margin: 3vh 0;
   background-image: url(${image});
   background-size: cover;
+  ::-webkit-scrollbar {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: lightGrey;
+  }
+  ::-webkit-scrollbar:horizontal {
+    display: none;
+  }
 `;
 
 export const NewMessageForm = styled.form`
