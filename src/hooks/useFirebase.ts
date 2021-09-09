@@ -3,6 +3,18 @@ import "firebase/auth";
 import firebase from "firebase/app";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
+import { MessageInterface } from "src/components";
+
+interface useFirebaseReturn {
+  auth: firebase.auth.Auth;
+  user: firebase.User | null | undefined;
+  firestore: firebase.firestore.Firestore;
+  messages: MessageInterface[];
+  loginWithGoogle: () => void;
+  logout: () => Promise<void>;
+  sendMessage: (text: string) => void;
+  loading: boolean;
+}
 
 firebase.initializeApp({
   apiKey: "AIzaSyBQLgUQPLwLJXFI-aLv9nZqSxMNvMbYILI",
@@ -17,7 +29,7 @@ firebase.initializeApp({
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
-export const useFirebase = () => {
+export const useFirebase = (): useFirebaseReturn => {
   const [user, loading] = useAuthState(auth);
 
   const logout = () => auth.signOut();
@@ -53,7 +65,7 @@ export const useFirebase = () => {
     auth,
     user,
     firestore,
-    messages,
+    messages: messages as unknown as MessageInterface[],
     loginWithGoogle,
     logout,
     sendMessage,

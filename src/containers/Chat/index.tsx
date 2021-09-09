@@ -1,5 +1,6 @@
-import React, { FunctionComponent, useState } from "react";
+import React, { FormEvent, FunctionComponent, useState } from "react";
 import "firebase/firestore";
+import { MessageInterface } from "src/components";
 import { useFirebase } from "src/hooks";
 import { MessagesList } from "./components";
 import { Container, NewMessageForm, Input, SubmitButton } from "./styles";
@@ -9,7 +10,7 @@ export const Chat: FunctionComponent = () => {
 
   const [newMessage, setNewMessage] = useState<string>("");
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     sendMessage(newMessage);
     setNewMessage("");
@@ -17,7 +18,7 @@ export const Chat: FunctionComponent = () => {
 
   return (
     <Container>
-      <MessagesList messages={messages} />
+      <MessagesList messages={messages as unknown as MessageInterface[]} />
       <NewMessageForm onSubmit={onSubmit}>
         <Input
           value={newMessage}

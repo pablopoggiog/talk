@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from "react";
 import "firebase/firestore";
-import { Message } from "src/components";
+import { Message, MessageInterface } from "src/components";
 import { Container } from "./styles";
 
 interface MessagesListProps {
-  messages?: any[];
+  messages?: MessageInterface[];
 }
 
 export const MessagesList: FunctionComponent<MessagesListProps> = ({
