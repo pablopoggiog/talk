@@ -1,6 +1,6 @@
 import React, { FormEvent, FunctionComponent, useState } from "react";
 import "firebase/firestore";
-import { MessageInterface } from "src/components";
+import { MessageInterface } from "src/types";
 import { useFirebase } from "src/hooks";
 import { MessagesList } from "./components";
 import { Container, NewMessageForm, Input, SubmitButton } from "./styles";

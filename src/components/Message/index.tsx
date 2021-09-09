@@ -1,14 +1,7 @@
 import React, { FunctionComponent } from "react";
-import { Container, Photo, Text, DateFooter, Content } from "./styles";
 import { useFirebase, useDate } from "src/hooks";
-
-export interface MessageInterface {
-  text: string;
-  uid: string;
-  photoURL: string;
-  createdAt: Record<string, number>;
-  id: string;
-}
+import { MessageInterface } from "src/types";
+import { Container, Photo, Text, DateFooter, Content } from "./styles";
 
 interface MessageProps {
   message: MessageInterface;

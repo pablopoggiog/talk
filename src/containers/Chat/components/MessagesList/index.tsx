@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react";
 import "firebase/firestore";
-import { Message, MessageInterface } from "src/components";
+import { Message } from "src/components";
+import { MessageInterface } from "src/types";
 import { Container } from "./styles";
 
 interface MessagesListProps {

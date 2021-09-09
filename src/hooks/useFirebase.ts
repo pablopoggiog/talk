@@ -3,18 +3,7 @@ import "firebase/auth";
 import firebase from "firebase/app";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
-import { MessageInterface } from "src/components";
-
-interface useFirebaseReturn {
-  auth: firebase.auth.Auth;
-  user: firebase.User | null | undefined;
-  firestore: firebase.firestore.Firestore;
-  messages: MessageInterface[];
-  loginWithGoogle: () => void;
-  logout: () => Promise<void>;
-  sendMessage: (text: string) => void;
-  loading: boolean;
-}
+import { MessageInterface, useFirebaseReturn } from "src/types";
 
 firebase.initializeApp({
   apiKey: "AIzaSyBQLgUQPLwLJXFI-aLv9nZqSxMNvMbYILI",
@@ -41,6 +30,7 @@ export const useFirebase = (): useFirebaseReturn => {
 
   const messagesRef = firestore.collection("messages");
   const query = messagesRef.orderBy("createdAt");
+
   const [messages] = useCollectionData(query, { idField: "id" });
 
   const sendMessage = (text: string) => {
@@ -54,6 +44,7 @@ export const useFirebase = (): useFirebaseReturn => {
         photoURL,
       });
     };
+
     try {
       asyncSending();
     } catch (error) {
