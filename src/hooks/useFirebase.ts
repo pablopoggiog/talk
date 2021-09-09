@@ -18,7 +18,7 @@ const auth = firebase.auth();
 const firestore = firebase.firestore();
 
 export const useFirebase = () => {
-  const [user] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
 
   const logout = () => auth.signOut();
 
@@ -57,5 +57,6 @@ export const useFirebase = () => {
     loginWithGoogle,
     logout,
     sendMessage,
+    loading,
   };
 };
