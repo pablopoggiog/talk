@@ -1,14 +1,8 @@
 import React, { FunctionComponent, useState } from "react";
 import "firebase/firestore";
-import { Message } from "src/components";
 import { useFirebase } from "src/hooks";
-import {
-  Container,
-  NewMessageForm,
-  Input,
-  SubmitButton,
-  MessagesList,
-} from "./styles";
+import { MessagesList } from "./components";
+import { Container, NewMessageForm, Input, SubmitButton } from "./styles";
 
 export const Chat: FunctionComponent = () => {
   const { messages, sendMessage } = useFirebase();
@@ -23,11 +17,7 @@ export const Chat: FunctionComponent = () => {
 
   return (
     <Container>
-      <MessagesList>
-        {messages &&
-          // @ts-ignore
-          messages.map((msg) => <Message key={msg.id} message={msg} />)}
-      </MessagesList>
+      <MessagesList messages={messages} />
       <NewMessageForm onSubmit={onSubmit}>
         <Input
           value={newMessage}
