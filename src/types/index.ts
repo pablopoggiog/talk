@@ -8,7 +8,7 @@ export interface MessageInterface {
   id: string;
 }
 
-export interface useFirebaseReturn {
+export interface UseFirebaseReturn {
   auth: firebase.auth.Auth;
   user: firebase.User | null | undefined;
   firestore: firebase.firestore.Firestore;
@@ -18,3 +18,9 @@ export interface useFirebaseReturn {
   sendMessage: (text: string) => void;
   loading: boolean;
 }
+
+export interface UseDateReturn {
+  timeAgo: string;
+}
+
+export type UseDate = (created: Record<string, number>) => UseDateReturn;

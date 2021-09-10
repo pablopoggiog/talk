@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { UseDate } from "src/types";
 
-export const useDate = (created: Record<string, number>) => {
+export const useDate: UseDate = (created) => {
   const [timeAgo, setTimeAgo] = useState<string>("");
 
   // i had to wrap this in a useEffect (and create the state above), b/c otherwise it cries when i send a new message that createdAt is undefined, donno why yet

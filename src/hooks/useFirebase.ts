@@ -3,7 +3,7 @@ import "firebase/auth";
 import firebase from "firebase/app";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
-import { MessageInterface, useFirebaseReturn } from "src/types";
+import { MessageInterface, UseFirebaseReturn } from "src/types";
 
 firebase.initializeApp({
   apiKey: "AIzaSyBQLgUQPLwLJXFI-aLv9nZqSxMNvMbYILI",
@@ -18,7 +18,7 @@ firebase.initializeApp({
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
-export const useFirebase = (): useFirebaseReturn => {
+export const useFirebase = (): UseFirebaseReturn => {
   const [user, loading] = useAuthState(auth);
 
   const logout = () => auth.signOut();
