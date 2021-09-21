@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState } from "react";
+import React, { FunctionComponent } from "react";
 import { useFirebase } from "src/hooks";
 import { Spinner } from "src/components";
 import { Chat, Login, Logout } from "src/containers";
