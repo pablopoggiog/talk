@@ -6,13 +6,13 @@ import { useCollectionData } from "react-firebase-hooks/firestore";
 import { MessageInterface, UseFirebaseReturn } from "src/types";
 
 firebase.initializeApp({
-  apiKey: "AIzaSyBQLgUQPLwLJXFI-aLv9nZqSxMNvMbYILI",
-  authDomain: "react-ts-talk.firebaseapp.com",
-  projectId: "react-ts-talk",
-  storageBucket: "react-ts-talk.appspot.com",
-  messagingSenderId: "922795508972",
-  appId: "1:922795508972:web:97b80396f1dae5b26bd1c9",
-  measurementId: "G-YPZSXBZJ3Y",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGE_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 });
 
 const auth = firebase.auth();
